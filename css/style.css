@@ -1,0 +1,179 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;   
+    color: hsl(300, 43%, 22%);
+
+    background-image:
+        url(../img/bg-pattern-top-desktop.svg),
+        url(../img/bg-pattern-bottom-desktop.svg);
+    background-position: 
+        top left, 
+        bottom right;
+    background-repeat: 
+        no-repeat;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+.socialProofSection {
+    width: 83%;
+    margin: 3.5rem auto;
+}
+
+.topDiv {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin-bottom: 4rem;
+}
+/* left side */
+.productInformation p {
+    color:hsl(303, 10%, 53%);
+}
+
+/* right side */
+.ratingsDiv {
+    position: relative;
+    margin: 0 auto;
+}
+.ratingsDiv .ratingBoxes:nth-of-type(2) {
+    position: relative;
+    left: 2rem;
+}
+.ratingsDiv .ratingBoxes:nth-of-type(3) {
+    position: relative;
+    left: 4rem;
+}
+
+.ratingBoxes {
+    display: flex;
+    flex-direction: row;
+    background-color:  hsl(300, 24%, 96%);
+    border-radius: 5px;
+    margin-top: 1rem;
+  
+    width: 350px;
+    justify-content: space-around;
+    padding: 1em 3em 1em 1em;
+}
+
+.ratingBoxes p {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+
+/* bottom div */
+.bottomDiv {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2rem;
+}
+
+.buyersBoxs {
+    position: relative;
+    background-color:hsl(300, 43%, 22%);
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.bottomDiv .buyersBoxs:nth-of-type(2) {
+    top: 15px;
+}
+.bottomDiv .buyersBoxs:nth-of-type(3) {
+    top: 30px;
+}
+
+
+img,
+.person-info {
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.roundImage {
+    border-radius: 50%;
+}
+
+.person-info {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+.person {
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 0.5rem;
+}
+.verifiedBuyers {
+    color: hsl(333, 80%, 67%);
+}
+
+.buyersOpinions{
+    color: hsl(300, 24%, 96%);
+    padding-top: 1rem;
+}
+
+.challenge {
+    font-size: 0.7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* M E D I A  Q U E R I E S */
+@media (max-width: 1151px){
+    html {
+        font-size: 85%;
+    }
+}
+@media (max-width: 1024px){
+    html {
+        font-size: 75%;
+    }
+}
+@media (max-width: 945px){
+    html {
+        font-size: 100%;
+    }
+    .topDiv {
+        grid-template-columns: 100%;
+    }
+    .bottomDiv {
+        grid-template-columns: 100%;
+    }
+
+
+    .buyersBoxs {
+        text-align: center;
+    }
+    .productInformation {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .ratingsDiv .ratingBoxes:nth-of-type(2) ,
+    .ratingsDiv .ratingBoxes:nth-of-type(3) {
+        position: static;
+    }
+    
+    
+} 
+
+@media (max-width: 542px) {
+    .socialProofSection {
+        width: 95%;
+    }
+    .ratingsDiv {
+        width: 100%;
+    }
+    .ratingBoxes {
+        width: 100%;
+        padding: 1em 0;
+    }
+}
